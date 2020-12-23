@@ -4,8 +4,8 @@ public class MainClass {
 		HeapSwiftdownAlgorithm h = new HeapSwiftdownAlgorithm();
 		OptimizedHeapSwiftdown o = new OptimizedHeapSwiftdown();
 		int[] arr = {10, 6, 7, 5, 15, 17, 12};
-		h.heapSort(arr, arr.length);
-		o.optimizdHeapSort(arr, arr.length);
+		h.basicHeapSort(arr, arr.length); // also returns the array - int[]
+		o.optimizdHeapSort(arr, arr.length); // also returns the array - int[]
 		
 		h.print(arr);
 		System.out.println();
