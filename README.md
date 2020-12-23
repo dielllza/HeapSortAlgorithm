@@ -1,6 +1,6 @@
 # HeapSortAlgorithm
-<h1>Implementation of exercise 7.6 of Programming Projects from the book "Data Structures and Algorithm Analysis" -Edition 3.2 (Java Version) Clifford A. Shaffer.</h1>
-<h2>Requirments of the exercise:</h2>
+<h2>Implementation of exercise 7.6 of Programming Projects from the book "Data Structures and Algorithm Analysis" -Edition 3.2 (Java Version) Clifford A. Shaffer.</h2>
+<h3>Requirments of the exercise:</h3>
 <p><b>7.6</b> It has been proposed that Heapsort can be optimized by altering the heap’s
 siftdown function. Call the value being sifted down X. Siftdown does two
 comparisons per level: First the children of X are compared, then the winner
