@@ -1,8 +1,8 @@
 public class Algorithm{
-	
-//	private int[] array;
-	
-	
+
+
+
+
 //	public Algorithm(int[] array){
 //		this.array = array;
 //	}
@@ -10,24 +10,25 @@ public class Algorithm{
 //	this.array = array;
 //}
 
-	
+
 	public int[] heapSort(int[] array, int length, Heap heapInterface) {
-		
+
 		int elementIndex = length/2;
 		for(int i = elementIndex; i >= 0; i--) {
 			array = heapInterface.buildHeap(array, length, i);
 		}
-		
+
+
 		// sort the array
 		while(length > 0 ) {
 			swap(array, 0, length-1); // -i-1 i->0 to (length?)
 			heapInterface.buildHeap(array, length-1, 0);
-			
+
 			length = length - 1;
 		}
 		return array;
 	}
-	
+
 	public int[] swap(int[] array, int indx1, int indx2){
 		int temp = array[indx1];
 		array[indx1] = array[indx2];
@@ -55,7 +56,7 @@ public class Algorithm{
 		}
 		return i;
 	}
-	
+
 	public void print(int[] array) {
 		for(int i = 0; i < array.length; i++) {
 			System.out.print(array[i] + ", ");

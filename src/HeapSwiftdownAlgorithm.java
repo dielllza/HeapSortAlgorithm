@@ -1,12 +1,12 @@
 
-public class HeapSwiftdownAlgorithm extends Algorithm{
+public class HeapSwiftdownAlgorithm extends Algorithm implements Heap {
 //	private int[] array;
 //	public void setArray(int[] array){
 //		this.array = array;
 //	}
 	
 	public int[] basicHeapSort(int[] array, int length){		
-		return super.heapSort(array, length, (int[] arr, int l, int i) -> buildHeap(arr, l, i));
+		return super.heapSort(array, length, this);
 	}
 	public int[] buildHeap(int[] array, int length, int i){
 			int leftIndx = leftChildIndex(i, length);
