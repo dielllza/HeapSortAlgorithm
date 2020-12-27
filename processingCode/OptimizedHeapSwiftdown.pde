@@ -1,4 +1,4 @@
-
+ //<>//
 public class OptimizedHeapSwiftdown extends Algorithm implements Heap {
 
   //  private int[] array;
@@ -12,7 +12,7 @@ public class OptimizedHeapSwiftdown extends Algorithm implements Heap {
   }
 
   public int[] buildOptimizedHeap(int[] array, int length, int i) {
-    int leftIndx = leftChildIndex(i, length); //<>//
+    int leftIndx = leftChildIndex(i, length);
     int rightIndx = rightChildIndex(i, length);
     int maxIndx = i;
     if (leftIndx == -1 && rightIndx != -1) {
@@ -32,9 +32,10 @@ public class OptimizedHeapSwiftdown extends Algorithm implements Heap {
       bubbleUp(array, length, i);
     } else {
       return bubbleUp(array, length, i);
-    }
+    } 
+    bubbleUp(array, length, i );
     swap(array, i, maxIndx);
-    bubbleUp(array, length, maxIndx );
+
     return buildOptimizedHeap(array, length, maxIndx);
   }
   private int[] bubbleUp(int[] array, int length, int i) {
